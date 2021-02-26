@@ -1,0 +1,35 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "This is a simple API",
+    "version" : "1.0.0",
+    "title" : "Simple Hello API",
+    "contact" : {
+      "email" : "you@your-company.com"
+    },
+    "license" : {
+      "name" : "Apache 2.0",
+      "url" : "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "tags" : [ {
+    "name" : "developers",
+    "description" : "Operations available to regular developers"
+  } ],
+  "paths" : {
+    "/myservice/api/v1/hello" : {
+      "get" : {
+        "tags" : [ "developers" ],
+        "summary" : "Says Hello",
+        "operationId" : "hello",
+        "description" : "Says Hello and that's it\n",
+        "produces" : [ "text/plain" ],
+        "responses" : {
+          "200" : {
+            "description" : "It worked"
+          }
+        }
+      }
+    }
+  }
+}
